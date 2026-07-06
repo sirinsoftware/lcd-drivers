@@ -1,9 +1,12 @@
+// SPDX-License-Identifier: GPL-2.0
+
 /*
- * ILI9341 Framebuffer
- *
+ * Framebuffer support for ILI9341 series.
  * ILI9341 chip drive TFT screen up to 320x240.
- *
+ * Copyright (C) Sirin Software LLC
+ * Author: Alex Nikitenko <alex.nikitenko@sirinsoftware.com>
  */
+
 #include <linux/kernel.h>
 #include <linux/device.h>
 #include <linux/module.h>
@@ -822,6 +825,6 @@ static int __init ili9341_init(void)
 
 module_init(ili9341_init);
 
-MODULE_LICENSE("Dual BSD/GPL");
+MODULE_LICENSE("GPL v2");
 MODULE_AUTHOR("Alex Nikitenko, alex.nikitenko@sirinsoftware.com");
 MODULE_DESCRIPTION("Framebuffer Driver for PiTFT with ILI9341");

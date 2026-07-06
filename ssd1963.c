@@ -1,8 +1,14 @@
+// SPDX-License-Identifier: GPL-2.0
+
 /*
- * SSD1963 Framebuffer
+ * SSD1963 LCD framebuffer driver
  *
- * The Solomon Systech SSD1963 chip drive TFT screen up to 320x240.
+ * Panel:    Newhaven NHD-5.7-320240WFB-CTXI-T1 (320x240)
+ * Bus:      8-bit parallel (8080) via GPIO
+ * Platform: CoreWind AT91SAM9G45 (IPC-SAM9G45), 2.6.3x kernels
  *
+ * Copyright (C) Sirin Software
+ * Author: Alex Nikitenko <alex.nikitenko@sirinsoftware.com>
  */
 
 #include <linux/kernel.h>
